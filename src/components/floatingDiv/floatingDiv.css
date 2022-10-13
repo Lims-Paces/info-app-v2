@@ -1,0 +1,15 @@
+.floatingdiv {
+    display: flex;
+    background: white;
+    box-shadow: 0px 19px 60px rgba(0, 0, 0, 0.2);
+    border-radius: 17px;
+    align-items: center;
+    justify-content: space-around;
+    height: 4.5rem;
+    padding: 0 28px 0 10px;
+}
+
+.floatingdiv>span {
+    font-size: 16px;
+    color: black;
+}

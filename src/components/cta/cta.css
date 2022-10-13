@@ -1,0 +1,85 @@
+.cta {
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 90vh;
+    margin-bottom: 8rem;
+    margin-top: 9rem;
+    margin-bottom: 13rem;
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.register> :nth-child(1) {
+    color: #242d49;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.register> :nth-child(2) {
+    color: yellowgreen;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.register> :nth-child(3) {
+    font-size: 14px;
+    color: rgb(189, 180, 180);
+    line-height: 2;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.s-button {
+    width: 8rem;
+    height: 2rem;
+    margin-top: 3rem;
+}
+
+.courses {
+    position: relative;
+}
+
+.courses>* {
+    position: absolute;
+}
+
+.s-blur2 {
+    left: 14rem;
+    top: 8rem;
+}
+
+.s-blur1 {
+    top: 13rem;
+    left: -18rem;
+}
+
+@media screen and (max-width: 480px) {
+    .cta {
+        margin-top: 5rem;
+        flex-direction: column;
+        gap: 5rem;
+        height: 10rem;
+        padding: 0;
+        text-align: center;
+    }
+    .register> :nth-child(1) {
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+    }
+    .register> :nth-child(2) {
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+    }
+    .courses {
+        display: flex;
+        flex-direction: column;
+        gap: 17rem;
+    }
+    .courses>* {
+        display: none;
+    }
+}

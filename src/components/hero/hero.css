@@ -1,0 +1,150 @@
+.hero {
+    display: flex;
+    height: 77vh;
+    margin-top: 6rem;
+}
+
+.i-left {
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.i-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.i-name> :nth-child(1) {
+    color: #242d49;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.i-name> :nth-child(2) {
+    color: #9acd32;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.i-name> :nth-child(3) {
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(160, 156, 156);
+    margin-top: 10px;
+    z-index: 999;
+}
+
+.i-button {
+    width: 6.5rem;
+    height: 2rem;
+}
+
+.i-right {
+    flex: 1;
+    position: relative;
+}
+
+.i-right>* {
+    position: absolute;
+    z-index: 1;
+}
+
+.i-right> :nth-child(1) {
+    transform: rotate(45deg);
+    top: -5rem;
+}
+
+.i-right> :nth-child(2) {
+    top: -7rem;
+    left: -12rem;
+}
+
+.i-name> :nth-child(3) {
+    line-height: 2;
+    font-size: 14px;
+    color: rgb(189, 180, 180);
+}
+
+.blur {
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    z-index: -9;
+    top: -18%;
+    left: 56%;
+    filter: blur(72px);
+}
+
+@media screen and (max-width: 480px) {
+    .hero {
+        flex-direction: column-reverse;
+        height: 40rem;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    .i-name {
+        text-align: center;
+    }
+    .i-name> :nth-child(1) {
+        font-size: 2rem;
+        letter-spacing: 3px;
+    }
+    .i-name> :nth-child(2) {
+        font-size: 2rem;
+        letter-spacing: 3px;
+    }
+    .btn {
+        text-align: center;
+    }
+    .i-right {
+        transform: scale(0.65);
+        left: -3rem;
+        margin-bottom: 10rem;
+    }
+    .i-right .blur {
+        display: none;
+    }
+    .floating-div {
+        transform: scale(0.75);
+    }
+}
+
+@media (min-width: 481px) and (max-width: 770px) {
+    .hero {
+        flex-direction: column-reverse;
+        height: 40rem;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    .i-name {
+        text-align: center;
+    }
+    .i-name> :nth-child(1) {
+        font-size: 2rem;
+        letter-spacing: 3px;
+    }
+    .i-name> :nth-child(2) {
+        font-size: 2rem;
+        letter-spacing: 3px;
+    }
+    .btn {
+        text-align: center;
+    }
+    .i-right {
+        transform: scale(0.9);
+        left: 4rem;
+        top: 1rem;
+        margin-bottom: 10rem;
+    }
+    .i-right .blur {
+        display: none;
+    }
+    .floating-div {
+        transform: scale(0.75);
+    }
+}
